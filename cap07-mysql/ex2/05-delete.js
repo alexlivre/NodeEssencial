@@ -2,7 +2,7 @@
 const CarroDB = require('./CarroDB');
 
 // Objeto carro em JSON
-var carro = { id:33};
+var carro = { id:32};
 
 CarroDB.delete(carro, function (carro) {
 	// Imprime os dados do carro
