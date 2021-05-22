@@ -5,10 +5,6 @@ const CarroDB = require('../model/CarroDB');
 // ----------------------
 
 router.get('/', (req, res) => {
-    res.send('API do Carros');
-});
-
-router.get('/', (req, res) => {
     CarroDB.getCarros((carros) => {
         res.json(carros)
     });
